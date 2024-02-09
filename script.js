@@ -2345,7 +2345,7 @@ var x = setInterval(function () {
   document.getElementById("seconds").innerHTML =
     seconds < 10 ? "0" + seconds : seconds;
   // If the countdown is over, display a message
-  if (distance > 0) {
+  if (distance <= 0) {
     clearInterval(x);
     document.getElementById("countdown").innerHTML = "";
     showChucMung();
